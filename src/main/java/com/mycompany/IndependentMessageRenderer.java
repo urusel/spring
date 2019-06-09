@@ -4,8 +4,9 @@ package com.mycompany;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class IndependentMessageRenderer {
-   //благодаря это аннотации Spring находит в контейнере бин с подходящей реализацией
-   @Autowired  //автосвязывание
+   //Р±Р»Р°РіРѕРґР°СЂСЏ СЌС‚Рѕ Р°РЅРЅРѕС‚Р°С†РёРё Spring РЅР°С…РѕРґРёС‚ РІ РєРѕРЅС‚РµР№РЅРµСЂРµ Р±РёРЅ СЃ РїРѕРґС…РѕРґСЏС‰РµР№ СЂРµР°Р»РёР·Р°С†РёРµР№
+    //Р±Р»Р°РіРѕРґР°СЂСЏ СЌС‚РѕР№ Р°РЅРЅРѕС‚Р°С†РёРё Sring РЅР°С…РѕРґРёС‚ РІ РєРѕРЅС‚РµР№РЅРµСЂРµ Р±РёРЅ СЃ РїРѕРґС…РѕРґСЏС‰РµР№ СЂРµР°Р»РёР·Р°С†РёРµР№
+   @Autowired  //Р°РІС‚РѕСЃРІСЏР·С‹РІР°РЅРёРµ
     private MessageRenderer renderer;
 
     public void print() {
